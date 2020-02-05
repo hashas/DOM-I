@@ -96,3 +96,28 @@ ptxt[7].textContent = siteContent['contact']['email'];
 // footer
 
 ptxt[8].textContent = siteContent['footer']['copyright'];
+
+// turn nav to green
+
+myNav.forEach(element => element.style.color = 'green');
+
+// add two items to nav
+
+const newItems = document.querySelector('nav');
+
+const social = document.createElement('a');
+
+social.textContent = "Social";
+social.href = '#';
+social.style.color = 'green';
+
+newItems.appendChild(social);
+
+
+const home = document.createElement('a');
+
+home.textContent = 'Home';
+home.href = '#';
+home.style.color = 'green';
+
+newItems.prepend(home);
